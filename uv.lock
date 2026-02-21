@@ -123,7 +123,7 @@ wheels = [
 ]
 
 [[package]]
-name = "sorting-visualizer"
+name = "sortinator"
 version = "1.0.0"
 source = { virtual = "." }
 dependencies = [
@@ -133,6 +133,6 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "pygame-ce", specifier = ">=2.5.6" },
-    { name = "pyinstaller", specifier = ">=6.17.0" },
+    { name = "pygame-ce" },
+    { name = "pyinstaller" },
 ]

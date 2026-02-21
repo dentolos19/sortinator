@@ -15,7 +15,7 @@ def generate_list(length, minimum_value=0, maximum_value=100):
 def main():
     pygame.init()
     pygame.font.init()
-    pygame.display.set_caption("Sorting Visualizer")
+    pygame.display.set_caption("Sortinator")
     pygame.display.set_icon(pygame.image.load("src/icon.ico"))
 
     from drawing import Drawing
@@ -42,7 +42,7 @@ def main():
             try:
                 # draw the next step of the sorting algorithm
                 # e.g. the green and red blocks which indicate the current comparison
-                drawing.draw_list(next(sorting_algorithm_generator))
+                drawing.draw_list(next(sorting_algorithm_generator))  # type: ignore
             except StopIteration:
                 # if the sorting is done, stop sorting and reset the generator
                 sorting = False

@@ -1,16 +1,20 @@
-# IDE configurations
+# Editor configurations
 .vs/
 .idea/
 
 # Environment files
 .venv/
-
-# Output files
+__pycache__/
 build/
 dist/
-__pycache__/
+*.spec
+
+# User files
+.env*
+!.env*.template
 
 # Miscellaneous files
 .DS_Store
 Desktop.ini
 Thumbs.db
+!.gitkeep

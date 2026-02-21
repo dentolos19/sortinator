@@ -42,20 +42,17 @@ def heap_sort(list):
     n = len(list)
 
     for i in range(n // 2 - 1, -1, -1):
-        yield from heap_sort_helper(list, n, i)
+        yield from _heap_sort_helper(list, n, i)
 
     for i in range(n - 1, 0, -1):
         list[i], list[0] = list[0], list[i]
         yield {i: colors.GREEN, 0: colors.RED}
-        yield from heap_sort_helper(list, i, 0)
+        yield from _heap_sort_helper(list, i, 0)
 
     return list
 
 
-# definitions below are helper functions for the algorithms above
-
-
-def heap_sort_helper(list, n, i):
+def _heap_sort_helper(list, n, i):
     largest = i
     left = 2 * i + 1
     right = 2 * i + 2
@@ -69,4 +66,4 @@ def heap_sort_helper(list, n, i):
     if largest != i:
         list[i], list[largest] = list[largest], list[i]
         yield {i: colors.GREEN, largest: colors.RED}
-        yield from heap_sort_helper(list, n, largest)
+        yield from _heap_sort_helper(list, n, largest)

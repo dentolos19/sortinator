@@ -1,4 +1,4 @@
-# Sorting Visualizer
+# Sortinator
 
 A simple sorting visualizer made with Python!
 

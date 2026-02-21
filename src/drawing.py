@@ -1,5 +1,6 @@
-import colors
 import pygame
+
+import colors
 
 
 class Drawing:
@@ -17,9 +18,7 @@ class Drawing:
         self.maximum_value = max(self.list)
         self.minimum_value = min(self.list)
         self.block_width = max((self.width - (self.PADDING * 2)) / len(self.list), 1)
-        self.block_height = round(
-            (self.height - self.TOP_PADDING) / (self.maximum_value - self.minimum_value)
-        )
+        self.block_height = round((self.height - self.TOP_PADDING) / (self.maximum_value - self.minimum_value))
         self.blocks_start = self.PADDING
         self.blocks_end = self.width - self.PADDING
 
