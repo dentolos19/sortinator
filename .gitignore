@@ -1,7 +1,6 @@
 # Editor configurations
 .vs/
 .idea/
-*.iml
 
 # Environment files
 .pytest_cache/
@@ -17,6 +16,7 @@ dist/
 !.env*.template
 
 # Miscellaneous files
+.tmp/
 .DS_Store
 Desktop.ini
 Thumbs.db
