@@ -5,7 +5,7 @@ requires-python = ">=3.13"
 dependencies = ["pygame-ce"]
 
 [dependency-groups]
-dev = ["ruff"]
+dev = ["ruff", "ty"]
 
 [tool.ruff]
 line-length = 120

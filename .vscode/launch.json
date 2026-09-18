@@ -5,7 +5,9 @@
       "name": "App",
       "request": "launch",
       "type": "debugpy",
-      "program": "${workspaceFolder}/main.py"
+      "preLaunchTask": "Setup",
+      "program": "${workspaceFolder}/src/main.py",
+      "python": "${workspaceFolder}/.venv/bin/python"
     }
   ]
 }
