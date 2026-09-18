@@ -1,5 +1,7 @@
-setup:
-    uv sync
+setup: install
+
+install:
+    uv sync --frozen
 
 start:
     uv run src/main.py
